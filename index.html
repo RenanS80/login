@@ -5,10 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/svg-inject.min.js"></script>
 
     <title>Login</title>
 </head>
 <body>
     
+    <main>
+        <div class="container-image">
+            <img src="assets/images/image.svg" alt="Form image" onload="SVGInject(this)">
+        </div>
+        
+        <div class="container-form">
+            <div class="form-content">
+                <div class="form-title">
+                    <p>Bem-vindo de volta</p>
+                    <h1>Faça login na sua conta</h1>
+                </div>
+    
+                <form>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="codelandia@gmail.com">
+                    
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="*********">
+                    
+                    <div class="form-radio">
+                        <div class="radio-content">
+                            <input type="radio" id="lembre">
+                            <label for="lembre">Lembre de mim</label>
+                        </div>
+                        <a href="#">Esqueceu sua senha?</a>
+                    </div>
+                    
+                    <button type="submit" class="button-entrar">Entrar</button>
+
+                    <a href="#" class="button-google-entrar">
+                        <img src="assets/images/google.svg" class="google-icon" alt="Google icon" onload="SVGInject(this)">
+                        Ou faça login com o Google
+                    </a>
+                </form>
+            </div>
+
+            <div class="cadastro">
+                <p>Não tem uma conta?</p>
+                <a href="#">Cadastre-se</a>
+            </div>
+        </div>
+    </main>
+
 </body>
 </html>
