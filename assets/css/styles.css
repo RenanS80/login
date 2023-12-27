@@ -1,18 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&display=swap');
 
 :root {
-    --green-light: #04C35C;
+    --green: #1E9E6A;
+    --green-light: #F3FFF2;;
+    --black: #1A202C;
+    --gray: #656769;
+    --gray-light: #E8E8E8;
+    --white: #FFF;
+    --white-light: #F1F1F1;
+
     --purple-light: #2B6CB0;
-    --white: #FFFFFF;
     --white-200: #F7FAFC;
-    --gray: #1A202C;
+
+    --font-archivo: 'Archivo', sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: var(--font-archivo);
+}
+
+body {
+    background-color: var(--white);
+    color: var(--black);
 }
 
 a {
@@ -27,7 +39,7 @@ main {
 }
 
 .container-image {
-    background: var(--white-200);
+    background: var(--green-light);
 }
 
 .container-image, 
@@ -40,7 +52,7 @@ main {
 }
 
 .container-image svg {
-    width: 400px;
+    width: 100%;
 }
 
 .container-form {
@@ -51,11 +63,6 @@ main {
     width: 347px;
     display: flex;
     flex-direction: column;
-}
-
-.form-title {
-    font-family: 'Merriweather', sans-serif;
-    color: var(--gray);
 }
 
 .form-title p {
@@ -94,6 +101,7 @@ input:active {
 
 input::placeholder {
     color: var(--gray);
+
 }
 
 .form-radio {
@@ -104,17 +112,19 @@ input::placeholder {
 }
 
 .form-radio a {
-    color: var(--purple-light)
+    color: var(--green);
+    font-weight: 500;
 }
 
 .radio-content {
     display: flex;
     align-items: center;
     gap: 11px;
+    font-weight: 500;
 }
 
 .button-entrar {
-    background: var(--green-light);
+    background: var(--green);
     margin: 16px 0px 15px 0px;
     cursor: pointer;
 }
@@ -137,7 +147,7 @@ input::placeholder {
     align-items: center;
     justify-content: center;
     gap: 11px;
-    background: var(--gray);
+    background: var(--black);
 }
 
 .button-entrar:hover,
@@ -147,14 +157,15 @@ input::placeholder {
 
 .cadastro {
     display: flex;
+    justify-content: center;
     gap: 5px;
-    position: absolute;
-    bottom: 0px;
-    margin-bottom: 50px;
+    font-size: 18px;;
+    margin-top: 64px;
+    font-weight: 500;
 }
 
 .cadastro a {
-    color: var(--purple-light);
+    color: var(--green);
 }
 
 
@@ -169,7 +180,7 @@ input::placeholder {
     }
 }
 
-@media (max-width: 768px) {   
+@media (max-width: 850px) {   
     main {
         align-items: center;
         justify-content: center;
